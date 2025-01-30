@@ -3,16 +3,21 @@ body {
    background-color: #ffebdd;
 }
 
-.cover-image {
-   background-image: url('./assets/capa.jpg');
-   height: 300px; /* Ajuste a altura conforme necessário */
-   background-size: cover;
-   background-position: center;
+.fixed-image {
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   z-index: 1000; /* Mantém a imagem acima de outros elementos */
 }
-
 
 .container {
    background-color: white;
+}
+
+.shadow-sm {
+   border: solid #00000024 1px !important;
+   box-shadow: 4px 5px 5px rgba(0, 0, 0, .075) !important;
 }
 
 .header {
@@ -43,6 +48,18 @@ a {
    text-decoration: none !important;
 }
 
+.btn-primary {
+   color: #fff !important;
+   /* background-color: #e21313 !important;
+   border-color: #e21313 !important; */
+}
+
+.btn-danger {
+   width: 100%;
+   color: white !important;
+   font-weight: bold !important;
+}
+
 .idade {
    font-weight: bold;
    font-style: italic;
@@ -50,13 +67,40 @@ a {
    color: #dc3545 !important;
 }
 
-.btn-primary {
-   color: #fff !important;
-   background-color: #e21313 !important;
-   border-color: #e21313 !important;
+.text-red {
+   color: #721c24;
+   font-weight: bold !important;
 }
 
-.shadow-sm {
-   border: solid #00000024 1px !important;
-   box-shadow: 4px 5px 5px rgba(0, 0, 0, .075) !important;
+.card-title {
+   color: #721c24;
+   font-weight: bold !important;
+}
+
+.text-small {
+   p, li {
+      font-size: small
+   }
+}
+
+.cover-image {
+   background-image: url('./assets/capa.jpg');
+   height: 300px; /* Ajuste a altura conforme necessário */
+   background-size: cover;
+   background-position: center;
+   max-width: 100%;
+}
+
+/* Para telas menores, o conteúdo dentro do .line-break ficará em uma nova linha */
+@media (max-width: 1199px) {
+   .text-crianca {
+      margin-bottom: 1rem;
+   }
+}
+
+/* Para telas maiores, o conteúdo dentro do .line-break ficará na mesma linha */
+@media (min-width: 1200px) {
+   .text-crianca {
+      margin-bottom: 40px;
+   }
 }
