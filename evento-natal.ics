@@ -1,0 +1,10 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+DTSTART:20231215T120000Z
+DTEND:20231215T210000Z
+SUMMARY:Festa de Natal - Sonhar Acordado SJC
+LOCATION:Seminário Diocesano Santa Teresinha, Av. São João, 2650 - Jardim das Colinas, São José dos Campos - SP
+DESCRIPTION:Um evento mágico com atividades e muita alegria para as crianças!
+END:VEVENT
+END:VCALENDAR
